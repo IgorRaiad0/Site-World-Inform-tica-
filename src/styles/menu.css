@@ -1,0 +1,99 @@
+#menu{
+    margin-top: 15%;
+}
+.section-title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#mensagem-email{
+  font-size: 24px;
+  text-align: center;
+}
+
+#linkcurso{
+  text-decoration: none;
+  color: black;
+}
+
+.section-subititle{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 6%;
+}
+#menu_cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;  
+  max-width: 1200px;        
+  margin: 0 auto;
+}
+
+.curso {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso:hover {
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transform: translateY(-1px) scale(1.06) !important; 
+}
+
+
+.curso-img {
+  width: 100%;
+  max-height: 250px;  
+  object-fit: cover;   
+  border-radius: 8px;
+}
+
+.curso-nome {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.descricao-curso {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media screen and (max-width: 470px){
+
+  .section-title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.section-subititle{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 6%;
+}
+  .curso {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border-radius: 8px; /* arredondamento menor em telas pequenas */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px; /* reduzido pra caber melhor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  
+}

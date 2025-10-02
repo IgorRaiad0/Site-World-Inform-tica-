@@ -1,0 +1,157 @@
+#email{
+    margin-top: 10%;
+    height: 90vh;
+}
+
+#container {
+    display: flex;       
+    height: 70%;   
+    position: relative; 
+}
+
+#esquerda {
+    flex: 1;      
+    display: flex;
+    position: relative; 
+    align-items: center;
+    justify-content: center; 
+}
+
+#direita {
+    flex: 1;
+    display: flex;       
+    align-items: center;
+    justify-content: center;  
+}
+
+.imagem{
+  margin-top: 5%;
+  width: 100%;
+  max-height: 500px;  
+  object-fit: contain; 
+  position: relative;   
+  z-index: 2;           
+}
+
+#titulo_email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    color:#ff4e50;
+}
+
+.elemento{
+    height: 50%;
+}
+
+
+/* Caixa do formulário */
+#formulario {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+}
+
+/* Label e textarea */
+#formulario label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+#formulario textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  resize: none;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+#formulario textarea:focus {
+  border-color: #2a5298;
+  outline: none;
+}
+
+/* Botão */
+#formulario button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 12px;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#formulario button:hover {
+  background: #1e3c72;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+  
+  #esquerda {
+    display: none; /* desaparece o lado esquerdo */
+  }
+  
+  #direita {
+    flex: 1;
+    width: 100%;   /* ocupa toda a largura */
+    padding: 1rem;
+  }
+
+  #formulario {
+    max-width: 100%; /* ocupa toda largura disponível */
+  }
+}
+
+@media screen and (max-width: 470px){
+     #formulario {
+    padding: 1rem;              /* reduz o espaço interno */
+    border-radius: 10px;        /* cantos mais suaves */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-direction: column;     /* garante que nada fique espremido lado a lado */
+  }
+
+  /* Label */
+  #formulario label {
+    font-size: 0.9rem;          /* fonte menor para caber melhor */
+    margin-bottom: 6px;
+  }
+
+  /* Textarea */
+  #formulario textarea {
+    height: 120px;              /* reduz altura */
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Botão */
+  #formulario button {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  #titulo_email {
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+}

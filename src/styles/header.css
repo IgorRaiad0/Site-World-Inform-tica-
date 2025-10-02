@@ -1,0 +1,99 @@
+header{
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #75bcefab 100%);
+    z-index: 3;
+}
+
+#entre-contato{
+    text-decoration: none;
+    color: azure;
+
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: rgb(236, 43, 43);
+}
+
+#nav_list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: rgb(187, 20, 31);
+    font-weight: 600;
+}
+
+.nav_item.active a {
+    color: black;
+    border-bottom: 3px solid rgb(10, 1, 2);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile-menu{
+    display: none;
+}
+
+#logoworld{
+    display: flex;
+    width: 8rem;
+}
+
+@media screen and (max-width: 1170px) {
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #logoworld{
+    display: none;
+    
+    }
+
+    #nav_list {
+        display: none;
+    }
+
+    #navbar .btn-button {
+        display: none;
+    }
+
+    #mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+
+    }
+
+    #mobile_nav_list .nav_item{
+        list-style: none;
+        text-align: center;
+    }
+
+}

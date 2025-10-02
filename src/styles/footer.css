@@ -1,0 +1,25 @@
+footer{
+    background-color: rgba(42, 132, 165, 0.552);
+    padding: 0.5rem;
+    
+}
+
+#footer_itens{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+}
+
+#copyrigth{
+    color: black;
+    font-weight: 500;
+}
+
+@media screen and(max-width: 600px) {
+    #footer_itens{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
