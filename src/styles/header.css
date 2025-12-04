@@ -65,8 +65,8 @@ header{
     }
 
     #logoworld{
-    display: none;
-    
+    display: flex;
+    width: 6rem;
     }
 
     #nav_list {
